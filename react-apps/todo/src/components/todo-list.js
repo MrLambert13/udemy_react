@@ -6,14 +6,14 @@ const TodoList = ({todoList}) => {
 
     const {id, ...rest} = elem;
     return (
-      <li key={id}>
+      <li key={id} className="list-group-item">
         <TodoListItem {...rest}/>
       </li>
     );
   });
 
   return (
-    <ul>
+    <ul className="list-group todo-list">
       {elements}
     </ul>
   );
